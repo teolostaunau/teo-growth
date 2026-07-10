@@ -1,0 +1,42 @@
+:root {
+  /* ==========================================================================
+     Brand Colors
+     ========================================================================== */
+
+  --brand-blue: #2563eb;
+  --brand-teal: #0f766e;
+  --brand-orange: #f97316;
+
+  /* ==========================================================================
+     Neutral Palette
+     ========================================================================== */
+
+  --neutral-0: #ffffff;
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-400: #94a3b8;
+  --neutral-600: #475569;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+
+  /* ==========================================================================
+     Semantic Colors
+     ========================================================================== */
+
+  --color-primary: var(--brand-blue);
+  --color-secondary: var(--brand-teal);
+  --color-accent: var(--brand-orange);
+
+  --color-background: var(--neutral-50);
+  --color-surface: var(--neutral-0);
+
+  --color-text: var(--neutral-900);
+  --color-text-muted: var(--neutral-600);
+
+  --color-border: var(--neutral-200);
+
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+}

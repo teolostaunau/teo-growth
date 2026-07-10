@@ -1,0 +1,309 @@
+.tg-workspace {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+
+  min-height: 100vh;
+}
+
+.tg-main {
+  display: grid;
+
+  grid-template-rows:
+    auto
+    1fr
+    auto;
+
+  min-height: 100vh;
+}
+
+.tg-sidebar {
+
+  background: var(--color-surface);
+
+  border-right:
+      1px solid var(--color-border);
+
+  padding: var(--space-6);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-6);
+}
+
+.tg-logo {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: .75rem;
+
+  font-weight: 700;
+
+}
+
+.tg-logo-mark {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  background: var(--color-primary);
+
+  color: white;
+
+}
+
+.tg-menu {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: .5rem;
+
+}
+
+.tg-menu-item {
+
+  background: transparent;
+
+  border: none;
+
+  text-align: left;
+
+  padding: .8rem;
+
+  border-radius: .75rem;
+
+}
+
+.tg-menu-item:hover {
+
+  background: var(--neutral-100);
+
+}
+
+.is-active {
+
+  background: var(--neutral-100);
+
+}
+
+.tg-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding:
+
+      var(--space-6);
+
+  background: white;
+
+  border-bottom:
+      1px solid var(--color-border);
+
+}
+
+.tg-overline {
+
+  font-size: .8rem;
+
+  color: var(--color-text-muted);
+
+  margin-bottom: .4rem;
+
+}
+
+.tg-demo-button {
+
+  background:
+      var(--color-primary);
+
+  color: white;
+
+  border: none;
+
+  padding:
+      .8rem
+      1.4rem;
+
+  border-radius:
+      var(--radius-md);
+
+}
+
+.tg-growth-center {
+
+  padding:
+
+      var(--space-6);
+
+  display: grid;
+
+  gap:
+
+      var(--space-5);
+
+}
+
+.tg-growth-center {
+
+  padding:
+
+      var(--space-6);
+
+  display: grid;
+
+  gap:
+
+      var(--space-5);
+
+}
+
+.tg-footer {
+
+  padding:
+
+      var(--space-4);
+
+  text-align: center;
+
+  color:
+
+      var(--color-text-muted);
+
+  border-top:
+
+      1px solid var(--color-border);
+
+  background:
+
+      white;
+
+}
+
+.tg-hero-card,
+.tg-opportunity-card,
+.tg-business-card,
+.tg-coach-card {
+
+  background: white;
+
+  border-radius: var(--radius-lg);
+
+  padding: var(--space-6);
+
+  box-shadow: var(--shadow-sm);
+
+  border: 1px solid var(--color-border);
+
+}
+
+.tg-hero-card {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1rem;
+
+}
+
+.tg-badge {
+
+  display: inline-flex;
+
+  align-self: flex-start;
+
+  background: rgba(37,99,235,.08);
+
+  color: var(--color-primary);
+
+  padding: .45rem .9rem;
+
+  border-radius: 999px;
+
+  font-size: .85rem;
+
+  font-weight: 600;
+
+}
+
+.tg-hero-message {
+
+  font-size: 1.15rem;
+
+  line-height: 1.7;
+
+  max-width: 760px;
+
+}
+
+.tg-primary-action {
+
+  align-self: flex-start;
+
+  background: var(--color-primary);
+
+  color: white;
+
+  border: none;
+
+  padding: .9rem 1.5rem;
+
+  border-radius: var(--radius-md);
+
+}
+
+.tg-highlight {
+
+  margin-top: .75rem;
+
+  color: var(--color-primary);
+
+  font-weight: 700;
+
+}
+
+.tg-metrics {
+
+  display: flex;
+
+  gap: 3rem;
+
+  margin-top: 1.5rem;
+
+}
+
+.tg-metrics div {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+.tg-metrics strong {
+
+  font-size: 2rem;
+
+}
+
+.tg-metrics span {
+
+  color: var(--color-text-muted);
+
+}
