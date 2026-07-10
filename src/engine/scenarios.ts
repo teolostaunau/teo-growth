@@ -1,63 +1,121 @@
 import type { DemoScenario } from "./types";
 
 export const scenarios: DemoScenario[] = [
-  {
-    role: "owner",
 
-    hero: {
-      greeting: "Buenos días, Carlos.",
-      message:
-        "Mientras tomabas tu café encontré una oportunidad estimada en S/ 18,500.",
-      action: "Ver oportunidad"
-    },
+{
+id:"owner",
+label:"Dueño",
 
-    opportunity: {
-      title: "Cinco clientes esperan respuesta.",
-      description:
-        "Todos escribieron durante las últimas 48 horas.",
-      probability: "82 %"
-    },
+hero:{
+greeting:"Buenos días, Carlos.",
+message:"Mientras tomabas tu café encontré una oportunidad estimada en S/ 18,500.",
+action:"Ver oportunidad"
+},
 
-    snapshot: [
-      { label: "Conversaciones", value: "126" },
-      { label: "Oportunidades", value: "38" },
-      { label: "Pipeline", value: "S/ 214K" }
-    ],
+opportunity:{
+title:"Cinco clientes esperan respuesta.",
+description:"Todos escribieron durante las últimas 48 horas.",
+probability:"82 %"
+},
 
-    coach: {
-      title: "Recomendación",
-      message:
-        "Prioriza los clientes del sector construcción."
-    }
-  },
+snapshot:[
+{label:"Conversaciones",value:"126"},
+{label:"Oportunidades",value:"38"},
+{label:"Pipeline",value:"S/214K"}
+],
 
-  {
-    role: "agent",
+coach:{
+title:"Recomendación",
+message:"Prioriza los clientes del sector construcción."
+}
 
-    hero: {
-      greeting: "Buenos días, María.",
-      message:
-        "Hoy tienes siete conversaciones con alta probabilidad de cierre.",
-      action: "Ver prioridades"
-    },
+},
 
-    opportunity: {
-      title: "Tres clientes respondieron esta mañana.",
-      description:
-        "Conviene atenderlos antes del mediodía.",
-      probability: "76 %"
-    },
+{
+id:"agent",
+label:"Agente",
 
-    snapshot: [
-      { label: "Pendientes", value: "7" },
-      { label: "Respondidas", value: "18" },
-      { label: "Objetivo", value: "92 %" }
-    ],
+hero:{
+greeting:"Buenos días, María.",
+message:"Hoy tienes siete conversaciones prioritarias.",
+action:"Ver prioridades"
+},
 
-    coach: {
-      title: "Sugerencia",
-      message:
-        "Empieza por quienes ya solicitaron una cotización."
-    }
-  }
+opportunity:{
+title:"Tres clientes respondieron esta mañana.",
+description:"Conviene responder antes del mediodía.",
+probability:"76 %"
+},
+
+snapshot:[
+{label:"Pendientes",value:"7"},
+{label:"Respondidas",value:"18"},
+{label:"Objetivo",value:"92%"}
+],
+
+coach:{
+title:"Consejo",
+message:"Empieza por quienes solicitaron una cotización."
+}
+
+},
+
+{
+id:"viewer",
+label:"Observador",
+
+hero:{
+greeting:"Buenos días.",
+message:"El equipo mantiene un excelente ritmo de atención.",
+action:"Ver desempeño"
+},
+
+opportunity:{
+title:"Seguimiento semanal.",
+description:"El rendimiento supera el promedio.",
+probability:"93 %"
+},
+
+snapshot:[
+{label:"Equipo",value:"8"},
+{label:"Respuesta",value:"93%"},
+{label:"SLA",value:"1h"}
+],
+
+coach:{
+title:"Observación",
+message:"No se requieren acciones inmediatas."
+}
+
+},
+
+{
+id:"coach",
+label:"Coach",
+
+hero:{
+greeting:"Hola Carlos.",
+message:"Quiero mostrarte por qué elegí esta oportunidad.",
+action:"Explícamelo"
+},
+
+opportunity:{
+title:"Patrón detectado.",
+description:"Las oportunidades provienen del mismo segmento.",
+probability:"89 %"
+},
+
+snapshot:[
+{label:"Patrones",value:"4"},
+{label:"Insights",value:"12"},
+{label:"Impacto",value:"Alto"}
+],
+
+coach:{
+title:"Coaching",
+message:"Si actúas hoy, aumentarás la probabilidad de cierre."
+}
+
+}
+
 ];
