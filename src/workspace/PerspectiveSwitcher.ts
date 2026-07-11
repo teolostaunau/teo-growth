@@ -21,7 +21,7 @@ export function renderPerspectiveSwitcher(): HTMLElement {
         👔 Dueño
       </button>
 
-      <button class="tg-role" data-role="agent">
+      <button class="tg-role" data-role="executive">
         💼 Ejecutivo
       </button>
 
