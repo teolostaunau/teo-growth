@@ -307,3 +307,14 @@
   color: var(--color-text-muted);
 
 }
+
+.tg-header-brand {
+    display: flex;
+    align-items: center;
+}
+
+.tg-growth-logo {
+    height: 90px;
+    width: auto;
+    display: block;
+}

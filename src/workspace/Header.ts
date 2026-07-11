@@ -1,18 +1,32 @@
+import { renderPerspectiveSwitcher } from "./PerspectiveSwitcher";
+import growthCenterLogo from "../assets/logos/growth-center.png";
+
 export function renderHeader(): HTMLElement {
   const header = document.createElement("header");
 
   header.className = "tg-header";
 
   header.innerHTML = `
-    <div>
-      <p class="tg-overline">Buenos días</p>
-      <h1>Teo ya revisó tu empresa</h1>
+    <div class="tg-header-brand">
+        <img
+            src="${growthCenterLogo}"
+            alt="Growth Center"
+            class="tg-growth-logo"
+        />
     </div>
 
-    <button class="tg-demo-button">
-      Cambiar Rol
-    </button>
+    <div class="tg-header-perspective">
+        <div id="tg-perspective-container"></div>
+    </div>
   `;
+
+    const container = header.querySelector<HTMLElement>(
+    "#tg-perspective-container"
+    );
+
+    if (container) {
+    container.append(renderPerspectiveSwitcher());
+    }
 
   return header;
 }
