@@ -1,5 +1,9 @@
 import "./PerspectiveSwitcher.css";
 
+import { refreshGrowthCenter } from "./WorkspaceController";
+import { DemoEngine } from "../engine/DemoEngine";
+import type { DemoRole } from "../engine/types";
+
 export function renderPerspectiveSwitcher(): HTMLElement {
 
   const section = document.createElement("section");
@@ -31,6 +35,29 @@ export function renderPerspectiveSwitcher(): HTMLElement {
 
     </div>
   `;
+
+  const buttons = section.querySelectorAll<HTMLButtonElement>(".tg-role");
+
+  buttons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+      const role = button.dataset.role as DemoRole;
+
+      // Cambia el escenario activo
+      DemoEngine.change(role);
+
+      refreshGrowthCenter();
+
+      console.log("Rol seleccionado:", role);
+
+      // Actualiza el botón activo
+      buttons.forEach((b) => b.classList.remove("active"));
+      button.classList.add("active");
+
+    });
+
+  });
 
   return section;
 }
