@@ -1,8 +1,18 @@
-export type DemoRole =
-  | "owner"
-  | "agent"
-  | "viewer"
-  | "coach";
+export const PERSPECTIVES = [
+  "owner",
+  "executive",
+  "viewer",
+] as const;
+
+/**
+ * Defines the business perspective from which the user
+ * experiences the Growth Center.
+ *
+ * The perspective changes the priority of information,
+ * never the underlying business data.
+ */
+
+export type Perspective = typeof PERSPECTIVES[number];
 
 export interface BusinessMetric {
   label: string;
@@ -27,7 +37,8 @@ export interface CoachContent {
 }
 
 export interface DemoScenario {
-  id: DemoRole;
+  id: Perspective;
+
   label: string;
 
   hero: HeroContent;

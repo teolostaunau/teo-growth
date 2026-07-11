@@ -32,8 +32,8 @@ message:"Prioriza los clientes del sector construcción."
 },
 
 {
-id:"agent",
-label:"Agente",
+id: "executive",
+label: "Ejecutivo",
 
 hero:{
 greeting:"Buenos días, María.",
@@ -88,34 +88,5 @@ message:"No se requieren acciones inmediatas."
 }
 
 },
-
-{
-id:"coach",
-label:"Coach",
-
-hero:{
-greeting:"Hola Carlos.",
-message:"Quiero mostrarte por qué elegí esta oportunidad.",
-action:"Explícamelo"
-},
-
-opportunity:{
-title:"Patrón detectado.",
-description:"Las oportunidades provienen del mismo segmento.",
-probability:"89 %"
-},
-
-snapshot:[
-{label:"Patrones",value:"4"},
-{label:"Insights",value:"12"},
-{label:"Impacto",value:"Alto"}
-],
-
-coach:{
-title:"Coaching",
-message:"Si actúas hoy, aumentarás la probabilidad de cierre."
-}
-
-}
 
 ];

@@ -1,16 +1,24 @@
 import { scenarios } from "./scenarios";
-import type { DemoRole, DemoScenario } from "./types";
 
-let currentRole: DemoRole = "owner";
+import type {
+  Perspective,
+  DemoScenario,
+} from "./types";
+
+let currentPerspective: Perspective = "owner";
 
 export function getScenario(): DemoScenario {
-  return scenarios.find(s => s.id === currentRole)!;
+  return scenarios.find(
+    s => s.id === currentPerspective
+  )!;
 }
 
-export function setRole(role: DemoRole) {
-  currentRole = role;
+export function setPerspective(
+  perspective: Perspective
+) {
+  currentPerspective = perspective;
 }
 
-export function getRole() {
-  return currentRole;
+export function getPerspective(): Perspective {
+  return currentPerspective;
 }

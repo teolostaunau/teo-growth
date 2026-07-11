@@ -2,7 +2,7 @@ import "./PerspectiveSwitcher.css";
 
 import { refreshGrowthCenter } from "./WorkspaceController";
 import { DemoEngine } from "../engine/DemoEngine";
-import type { DemoRole } from "../engine/types";
+import type { Perspective } from "../engine/types";
 
 export function renderPerspectiveSwitcher(): HTMLElement {
 
@@ -29,10 +29,6 @@ export function renderPerspectiveSwitcher(): HTMLElement {
         📊 Supervisor
       </button>
 
-      <button class="tg-role" data-role="coach">
-        🧠 Coach IA
-      </button>
-
     </div>
   `;
 
@@ -42,14 +38,14 @@ export function renderPerspectiveSwitcher(): HTMLElement {
 
     button.addEventListener("click", () => {
 
-      const role = button.dataset.role as DemoRole;
+      const perspective = button.dataset.role as Perspective;
 
       // Cambia el escenario activo
-      DemoEngine.change(role);
+      DemoEngine.change(perspective);
 
       refreshGrowthCenter();
 
-      console.log("Rol seleccionado:", role);
+      console.log("Rol seleccionado:", perspective);
 
       // Actualiza el botón activo
       buttons.forEach((b) => b.classList.remove("active"));

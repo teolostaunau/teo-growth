@@ -1,5 +1,5 @@
 import { scenarios } from "./scenarios";
-import type { DemoScenario, DemoRole } from "./types";
+import type { DemoScenario, Perspective } from "./types";
 
 let currentIndex = 0;
 
@@ -7,7 +7,7 @@ export function currentScenario(): DemoScenario {
   return scenarios[currentIndex];
 }
 
-export function currentRole(): DemoRole {
+export function currentRole(): Perspective {
   return currentScenario().id;
 }
 
@@ -16,8 +16,13 @@ export function nextScenario(): DemoScenario {
   return currentScenario();
 }
 
-export function setScenario(role: DemoRole): DemoScenario {
-  const index = scenarios.findIndex(s => s.id === role);
+export function setScenario(
+  perspective: Perspective
+): DemoScenario {
+
+  const index = scenarios.findIndex(
+    s => s.id === perspective
+  );
 
   if (index >= 0) {
     currentIndex = index;
