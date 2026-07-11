@@ -1,16 +1,22 @@
 import "./CoachConversation.css";
 
+import { DemoEngine } from "../../engine/DemoEngine";
+
 export function CoachConversation(): string {
+
+  const scenario = DemoEngine.current();
+
   return `
     <section class="tg-coach-card">
 
       <h3>🧠 Coach Recommendation™</h3>
 
       <p>
-        Hoy conviene que María contacte primero a los clientes
-        del sector construcción.
+        <strong>${scenario.coach.title}</strong>
+      </p>
 
-        Es donde existe la mayor probabilidad de cierre.
+      <p>
+        ${scenario.coach.message}
       </p>
 
     </section>

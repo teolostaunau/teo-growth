@@ -1,6 +1,25 @@
 import "./BusinessSnapshot.css";
 
+import { DemoEngine } from "../../engine/DemoEngine";
+
 export function BusinessSnapshot(): string {
+
+  const scenario = DemoEngine.current();
+
+  const metrics = scenario.snapshot
+    .map(
+      (metric) => `
+        <div class="tg-metric">
+
+          <strong>${metric.value}</strong>
+
+          <span>${metric.label}</span>
+
+        </div>
+      `
+    )
+    .join("");
+
   return `
     <section class="tg-business-card">
 
@@ -8,29 +27,7 @@ export function BusinessSnapshot(): string {
 
       <div class="tg-metrics">
 
-        <div class="tg-metric">
-
-          <strong>126</strong>
-
-          <span>Conversaciones</span>
-
-        </div>
-
-        <div class="tg-metric">
-
-          <strong>38</strong>
-
-          <span>Oportunidades</span>
-
-        </div>
-
-        <div class="tg-metric">
-
-          <strong>S/ 214K</strong>
-
-          <span>Pipeline</span>
-
-        </div>
+        ${metrics}
 
       </div>
 
