@@ -4,15 +4,13 @@ display:flex;
 
 flex-direction:column;
 
-gap:16px;
-
-padding:24px;
-
+gap:10px;
+padding:18px 22px;
 background:#ffffff;
 
 border-radius:20px;
 
-box-shadow:var(--shadow-sm);
+box-shadow:0 8px 24px rgba(15,23,42,.06);
 
 }
 
@@ -31,6 +29,54 @@ color:var(--color-text);
 margin:0;
 
 line-height:1.7;
+
+color:var(--color-text-secondary);
+
+}
+
+.tg-coach-badge{
+
+display:inline-flex;
+
+padding:6px 12px;
+
+border-radius:999px;
+
+background:rgba(99,102,241,.10);
+
+font-size:.75rem;
+
+font-weight:700;
+
+margin-bottom:16px;
+
+}
+
+.tg-coach-title{
+margin-bottom:4px;
+margin:0 0 12px;
+
+font-size:1.1rem;
+
+}
+
+.tg-coach-message{
+
+line-height:1.45;
+
+}
+
+.tg-coach-signature{
+
+margin-top:10px;
+
+padding-top:16px;
+
+border-top:1px solid var(--color-border);
+
+font-size:.85rem;
+
+font-style:italic;
 
 color:var(--color-text-secondary);
 

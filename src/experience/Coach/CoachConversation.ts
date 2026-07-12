@@ -6,19 +6,27 @@ export function CoachConversation(): string {
 
   const scenario = DemoEngine.current();
 
-  return `
-    <section class="tg-coach-card">
+return `
+  <section class="tg-coach-card">
 
-      <h3>🧠 Coach Recommendation™</h3>
+    <div class="tg-coach-badge">
+      🧭 Executive Coach™
+    </div>
 
-      <p>
-        <strong>${scenario.coach.title}</strong>
-      </p>
+    <h3 class="tg-coach-title">
+      ${scenario.coach.title}
+    </h3>
 
-      <p>
-        ${scenario.coach.message}
-      </p>
+    <p class="tg-coach-message">
+      ${scenario.coach.message}
+    </p>
 
-    </section>
-  `;
+    <div class="tg-coach-signature">
+      La decisión sigue siendo tuya.
+      <br>
+      Mi trabajo es ayudarte a verla con mayor claridad.
+    </div>
+
+  </section>
+`;
 }

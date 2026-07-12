@@ -13,7 +13,13 @@ export function BusinessSnapshot(): string {
 
           <strong>${metric.value}</strong>
 
-          <span>${metric.label}</span>
+          <span class="tg-metric-label">
+            ${metric.label}
+          </span>
+
+          <p class="tg-metric-insight">
+            ${metric.insight}
+          </p>
 
         </div>
       `
@@ -23,7 +29,7 @@ export function BusinessSnapshot(): string {
   return `
     <section class="tg-business-card">
 
-      <h3>📊 Business Snapshot™</h3>
+      <h3>📊 ¿Por qué esta decisión es importante?</h3>
 
       <div class="tg-metrics">
 

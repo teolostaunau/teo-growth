@@ -17,10 +17,12 @@ export type Perspective = typeof PERSPECTIVES[number];
 export interface BusinessMetric {
   label: string;
   value: string;
+  insight: string;
 }
 
 export interface HeroContent {
   greeting: string;
+  status: string;
   message: string;
   action: string;
 }
@@ -29,6 +31,7 @@ export interface OpportunityContent {
   title: string;
   description: string;
   probability: string;
+  action: string;
 }
 
 export interface CoachContent {
@@ -38,11 +41,8 @@ export interface CoachContent {
 
 export interface DemoScenario {
   id: Perspective;
-
   label: string;
-
   hero: HeroContent;
-
   opportunity: OpportunityContent;
 
   snapshot: BusinessMetric[];

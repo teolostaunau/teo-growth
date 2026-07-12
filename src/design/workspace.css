@@ -72,29 +72,47 @@
 
 }
 
-.tg-menu-item {
+.tg-menu-item{
 
-  background: transparent;
+display:flex;
 
-  border: none;
+align-items:center;
 
-  text-align: left;
+width:100%;
 
-  padding: .8rem;
+padding:12px 14px;
 
-  border-radius: .75rem;
+border:none;
+
+border-radius:12px;
+
+background:transparent;
+
+font-size:.95rem;
+
+font-weight:500;
+
+cursor:pointer;
+
+transition:.2s;
+
+text-align:left;
 
 }
 
-.tg-menu-item:hover {
+.tg-menu-item:hover{
 
-  background: var(--neutral-100);
+background:rgba(37,99,235,.08);
 
 }
 
-.is-active {
+.is-active{
 
-  background: var(--neutral-100);
+background:rgba(37,99,235,.12);
+
+color:var(--color-primary);
+
+font-weight:700;
 
 }
 
@@ -106,14 +124,61 @@
 
   align-items: center;
 
-  padding:
-
-      var(--space-6);
+  padding:24px 32px;
 
   background: white;
 
-  border-bottom:
-      1px solid var(--color-border);
+  border-bottom:1px solid var(--color-border);      
+
+}
+
+.tg-header-title{
+
+margin:0;
+
+font-size:1.45rem;
+
+font-weight:700;
+
+color:var(--color-text);
+
+}
+
+.tg-header-subtitle{
+
+margin-top:4px;
+
+font-size:.9rem;
+
+color:var(--color-text-secondary);
+
+}
+
+.tg-header-left{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.tg-header-right{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.tg-header-copy{
+
+display:flex;
+
+flex-direction:column;
 
 }
 
@@ -145,31 +210,14 @@
 
 }
 
-.tg-growth-center {
+.tg-growth-center{
 
-  padding:
+display:flex;
+flex-direction:column;
 
-      var(--space-6);
+gap:14px;
 
-  display: grid;
-
-  gap:
-
-      var(--space-5);
-
-}
-
-.tg-growth-center {
-
-  padding:
-
-      var(--space-6);
-
-  display: grid;
-
-  gap:
-
-      var(--space-5);
+padding:16px 20px;
 
 }
 
@@ -313,8 +361,47 @@
     align-items: center;
 }
 
-.tg-growth-logo {
-    height: 90px;
-    width: auto;
-    display: block;
+.tg-growth-logo{
+  width:54px;
+  height:54px;
+  object-fit:contain;
+  flex-shrink:0;
+}
+
+.tg-sidebar-brand{
+
+padding-bottom:24px;
+
+border-bottom:1px solid var(--color-border);
+
+}
+
+.tg-logo-tagline{
+
+margin-top:2px;
+
+font-size:.72rem;
+
+color:var(--color-text-muted);
+
+letter-spacing:.04em;
+
+}
+
+.tg-sidebar-footer{
+
+margin-top:auto;
+
+padding-top:24px;
+
+border-top:1px solid var(--color-border);
+
+font-size:.8rem;
+
+color:var(--color-text-muted);
+
+display:flex;
+
+justify-content:space-between;
+
 }

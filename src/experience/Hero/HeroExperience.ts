@@ -1,5 +1,4 @@
 import "./HeroExperience.css";
-
 import { DemoEngine } from "../../engine/DemoEngine";
 
 export function HeroExperience(): string {
@@ -15,6 +14,10 @@ export function HeroExperience(): string {
       <h1 class="hero-title">
         ${scenario.hero.greeting}
       </h1>
+
+      <div class="tg-business-status">
+        ${scenario.hero.status}
+      </div>
 
       <p class="hero-message">
         ${scenario.hero.message}

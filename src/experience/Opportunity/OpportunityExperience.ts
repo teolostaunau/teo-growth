@@ -9,16 +9,30 @@ export function OpportunityExperience(): string {
   return `
     <section class="tg-opportunity-card">
 
-      <h3>🎯 Opportunity Card™</h3>
+      <div class="tg-opportunity-badge">
+        🎯 DECISIÓN PRIORITARIA
+      </div>
 
-      <p>
+      <h1 class="tg-opportunity-title">
+        ${scenario.opportunity.title}
+      </h1>
+
+      <p class="tg-opportunity-description">
         ${scenario.opportunity.description}
       </p>
 
-      <p class="tg-highlight">
-        Probabilidad estimada de recuperación:
-        ${scenario.opportunity.probability}
-      </p>
+<div class="tg-opportunity-footer">
+
+  <p class="tg-opportunity-probability">
+    Probabilidad de cierre:
+    <strong>${scenario.opportunity.probability}</strong>
+  </p>
+
+  <button class="tg-opportunity-button">
+    ${scenario.opportunity.action}
+  </button>
+
+</div>
 
     </section>
   `;
