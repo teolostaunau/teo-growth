@@ -9,15 +9,31 @@
 .growth-welcome-header{
 
     display:flex;
+    align-items:flex-start;
+    gap:16px;
+
+}
+
+.hero-heading{
+
+    display:flex;
     flex-direction:column;
     gap:4px;
+
+}
+
+.hero-icon{
+
+    font-size:2.8rem;
+    line-height:1;
+    flex-shrink:0;
 
 }
 
 .growth-title{
 
     margin:0;
-    font-size:2rem;
+    font-size:1.9rem;
     font-weight:700;
     line-height:1.1;
 
@@ -32,7 +48,7 @@
 .growth-message{
     margin:0;
     max-width:60ch;
-    line-height:1.55;
+    line-height:1.45;
     color:var(--color-text);
 }
 

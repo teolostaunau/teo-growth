@@ -13,9 +13,10 @@ export function CoachConversation(): string {
     <section class="tg-coach-card">
 
       <h3 class="tg-coach-title">
-        🧠 Growth Coach™
+        🧠 Mi recomendación para hoy
       </h3>
 
+      
       <h4 class="tg-coach-heading">
         ${scenario.coach.title}
       </h4>

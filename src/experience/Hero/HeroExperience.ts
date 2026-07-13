@@ -1,6 +1,31 @@
 import "./HeroExperience.css";
 import { DemoEngine } from "../../engine/DemoEngine";
 
+function getGreeting(): { icon: string; text: string } {
+
+  const hour = new Date().getHours();
+
+  if (hour < 12) {
+    return {
+      icon: "☀️",
+      text: "Buenos días"
+    };
+  }
+
+  if (hour < 18) {
+    return {
+      icon: "🌤️",
+      text: "Buenas tardes"
+    };
+  }
+
+  return {
+    icon: "🌙",
+    text: "Buenas noches"
+  };
+
+}
+
 export function HeroExperience(): string {
 
   const scenario = DemoEngine.current();
@@ -14,6 +39,8 @@ export function HeroExperience(): string {
 
   const formattedToday =
     `Hoy es ${today.charAt(0).toLowerCase()}${today.slice(1)}`;
+  
+  const greeting = getGreeting();
 
   return `
 
@@ -22,14 +49,18 @@ export function HeroExperience(): string {
       <div class="growth-welcome">
 
         <div class="growth-welcome-header">
+          <div class="hero-icon">
+            ${greeting.icon}
+          </div>
+          <div class="hero-heading">
+            <h1 class="growth-title">
+              ${greeting.text}, ${scenario.hero.greeting}
+            </h1>
 
-          <h1 class="growth-title">
-            ${scenario.hero.greeting}
-          </h1>
-
-          <p class="growth-date">
-            ${formattedToday}
-          </p>
+            <p class="growth-date">
+              ${formattedToday}
+            </p>
+          </div>
 
         </div>
 

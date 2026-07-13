@@ -73,46 +73,48 @@
 }
 
 .tg-menu-item{
-
 display:flex;
-
 align-items:center;
-
 width:100%;
-
 padding:12px 14px;
-
 border:none;
-
 border-radius:12px;
-
 background:transparent;
-
 font-size:.95rem;
-
 font-weight:500;
-
 cursor:pointer;
-
 transition:.2s;
-
 text-align:left;
-
 }
 
 .tg-menu-item:hover{
-
 background:rgba(37,99,235,.08);
-
 }
 
 .is-active{
+  position:relative;
+  background:rgba(37,99,235,.12);
+  color:var(--color-primary);
+  font-weight:700;
+}
 
-background:rgba(37,99,235,.12);
+.is-active::before{
 
-color:var(--color-primary);
+content:"";
 
-font-weight:700;
+position:absolute;
+
+left:-14px;
+
+top:8px;
+
+bottom:8px;
+
+width:4px;
+
+border-radius:999px;
+
+background:var(--color-primary);
 
 }
 

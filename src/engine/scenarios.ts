@@ -7,7 +7,7 @@ export const scenarios: DemoScenario[] = [
   label: "Dueño",
 
   hero: {
-    greeting: "Buenos días, Carlos",
+    greeting: "Carlos",
     status: "🟢 Tu negocio está creciendo",
     message:
       "Antes de que comenzaras tu jornada, encontré tres decisiones que pueden marcar la diferencia en los resultados de hoy.",
@@ -60,7 +60,7 @@ coach: {
   label: "Ejecutivo",
 
   hero: {
-    greeting: "Buenos días, María",
+    greeting: "María",
     status: "🟢 El negocio está creciendo",
     message:
       "Hoy tienes tres conversaciones que pueden convertirse en ventas si actúas durante la mañana.",
@@ -113,7 +113,7 @@ coach: {
   label: "Observador",
 
   hero: {
-    greeting: "Buenos días, Javier",
+    greeting: "Javier",
     status: "🟢 El negocio está creciendo",
     message:
       "La operación comercial mantiene un buen ritmo y existen oportunidades importantes en seguimiento.",
