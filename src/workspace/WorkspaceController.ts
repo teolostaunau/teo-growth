@@ -1,13 +1,15 @@
-import { renderGrowthCenter } from "./GrowthCenter";
+import { renderCurrentWorkspace } from "./WorkspaceRenderer";
 
-export function refreshGrowthCenter() {
+export function refreshWorkspace() {
 
-  const current = document.querySelector(".tg-growth-center");
+  const container = document.querySelector<HTMLElement>(
+    ".tg-workspace-content"
+  );
 
-  if (!current) return;
+  if (!container) return;
 
-  const updated = renderGrowthCenter();
-
-  current.replaceWith(updated);
+  container.replaceChildren(
+    renderCurrentWorkspace()
+  );
 
 }

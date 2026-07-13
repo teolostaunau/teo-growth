@@ -54,14 +54,13 @@ export function HeroExperience(): string {
           </div>
           <div class="hero-heading">
             <h1 class="growth-title">
-              ${greeting.text}, ${scenario.hero.greeting}
+              ${greeting.text}, ${scenario.hero.greeting} (${scenario.id})
             </h1>
 
             <p class="growth-date">
               ${formattedToday}
             </p>
           </div>
-
         </div>
 
         <p class="growth-message">
@@ -69,7 +68,6 @@ export function HeroExperience(): string {
         </p>
 
         <div class="growth-footer">
-
           <div class="growth-status">
             ${scenario.hero.status}
           </div>
@@ -77,7 +75,6 @@ export function HeroExperience(): string {
           <button class="hero-button">
             ${scenario.hero.action}
           </button>
-
         </div>
 
       </div>

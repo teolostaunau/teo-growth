@@ -1,6 +1,6 @@
 import "./PerspectiveSwitcher.css";
 
-import { refreshGrowthCenter } from "./WorkspaceController";
+import { refreshWorkspace } from "./WorkspaceController";
 import { DemoEngine } from "../engine/DemoEngine";
 import type { Perspective } from "../engine/types";
 
@@ -40,22 +40,24 @@ section.innerHTML = `
 
   buttons.forEach((button) => {
 
-    button.addEventListener("click", () => {
+button.addEventListener("click", () => {
 
-      const perspective = button.dataset.role as Perspective;
+  const perspective = button.dataset.role as Perspective;
 
-      // Cambia el escenario activo
-      DemoEngine.change(perspective);
+  // Cambia el botón activo primero
+  buttons.forEach((b) => b.classList.remove("active"));
+  button.classList.add("active");
 
-      refreshGrowthCenter();
+  // Cambia el escenario
+  DemoEngine.change(perspective);
 
-      console.log("Rol seleccionado:", perspective);
+  console.log("Rol seleccionado:", perspective);
+  console.log(DemoEngine.current());
 
-      // Actualiza el botón activo
-      buttons.forEach((b) => b.classList.remove("active"));
-      button.classList.add("active");
+  // Finalmente refresca el contenido
+  refreshWorkspace();
 
-    });
+});
 
   });
 

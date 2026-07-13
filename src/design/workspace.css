@@ -386,3 +386,8 @@ display:flex;
 justify-content:space-between;
 
 }
+
+.tg-workspace-content{
+  display:flex;
+  flex-direction:column;
+}
