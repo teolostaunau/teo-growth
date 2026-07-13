@@ -34,18 +34,26 @@ export interface OpportunityContent {
   action: string;
 }
 
+export interface SnapshotContent {
+  title: string;
+  metrics: BusinessMetric[];
+}
+
 export interface CoachContent {
   title: string;
-  message: string;
+  summary: string;
+  reasons: string[];
 }
 
 export interface DemoScenario {
   id: Perspective;
   label: string;
+
   hero: HeroContent;
+
   opportunity: OpportunityContent;
 
-  snapshot: BusinessMetric[];
+  snapshot: SnapshotContent;
 
   coach: CoachContent;
 }

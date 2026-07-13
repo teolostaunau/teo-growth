@@ -1,32 +1,33 @@
 import "./CoachConversation.css";
-
 import { DemoEngine } from "../../engine/DemoEngine";
 
 export function CoachConversation(): string {
 
   const scenario = DemoEngine.current();
 
-return `
-  <section class="tg-coach-card">
+  const reasons = scenario.coach.reasons
+    .map(reason => `<li>${reason}</li>`)
+    .join("");
 
-    <div class="tg-coach-badge">
-      🧭 Executive Coach™
-    </div>
+  return `
+    <section class="tg-coach-card">
 
-    <h3 class="tg-coach-title">
-      ${scenario.coach.title}
-    </h3>
+      <h3 class="tg-coach-title">
+        🧠 Growth Coach™
+      </h3>
 
-    <p class="tg-coach-message">
-      ${scenario.coach.message}
-    </p>
+      <h4 class="tg-coach-heading">
+        ${scenario.coach.title}
+      </h4>
 
-    <div class="tg-coach-signature">
-      La decisión sigue siendo tuya.
-      <br>
-      Mi trabajo es ayudarte a verla con mayor claridad.
-    </div>
+      <p class="tg-coach-summary">
+        ${scenario.coach.summary}
+      </p>
 
-  </section>
-`;
+      <ul class="tg-coach-reasons">
+        ${reasons}
+      </ul>
+
+    </section>
+  `;
 }

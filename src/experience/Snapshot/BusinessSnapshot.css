@@ -1,33 +1,22 @@
 .tg-business-card{
-
-display:flex;
-flex-direction:column;
-gap:10px;
-
-padding:20px;
-
-background:#fff;
-
-border-radius:20px;
-
-box-shadow:0 8px 24px rgba(15,23,42,.06);
-
+    display:flex;
+    flex-direction:column;
+    gap:.35rem;
+    line-height:1.4;
 }
 
-.tg-business-card h3{
-
-margin:0;
-
-font-size:1.1rem;
-
-color:var(--color-text);
-
+.tg-business-title{
+    margin:0;
+    padding:0;
+    line-height:1.2;
+    font-size:1rem;
+    font-weight:700;
 }
+
 
 .tg-metrics{
 
 display:grid;
-
 grid-template-columns:repeat(3,1fr);
 gap:12px;
 
@@ -37,10 +26,16 @@ gap:12px;
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:10px 12px;
-gap:6px;
-border-radius:14px;
+border-radius:12px;
 background:var(--color-surface);
+}
+
+.tg-metric-value{
+
+    font-size:2rem;
+    font-weight:700;
+    color:var(--color-primary);
+
 }
 
 .tg-metric strong{
@@ -51,40 +46,19 @@ color:var(--color-primary);
 
 }
 
-.tg-metric span{
-
-margin-top:6px;
-
-font-size:.9rem;
-
-color:var(--color-text-secondary);
-
-}
 
 .tg-metric-label{
 
-margin-top:2px;
-
-font-size:.9rem;
-
-font-weight:600;
-
-color:var(--color-text);
-
-text-align:center;
+    font-weight:600;
 
 }
 
 .tg-metric-insight{
 
-margin-top:4px;
+    font-size:.82rem;
 
-font-size:.78rem;
+    color:var(--color-text-secondary);
 
-line-height:1.3;
-
-text-align:center;
-
-color:var(--color-text-secondary);
+    line-height:1.3;
 
 }

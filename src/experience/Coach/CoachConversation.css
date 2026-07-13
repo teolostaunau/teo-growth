@@ -1,83 +1,38 @@
 .tg-coach-card{
-
-display:flex;
-
-flex-direction:column;
-
-gap:10px;
-padding:18px 22px;
-background:#ffffff;
-
-border-radius:20px;
-
-box-shadow:0 8px 24px rgba(15,23,42,.06);
-
-}
-
-.tg-coach-card h3{
-
-margin:0;
-
-font-size:1.1rem;
-
-color:var(--color-text);
-
-}
-
-.tg-coach-card p{
-
-margin:0;
-
-line-height:1.7;
-
-color:var(--color-text-secondary);
-
-}
-
-.tg-coach-badge{
-
-display:inline-flex;
-
-padding:6px 12px;
-
-border-radius:999px;
-
-background:rgba(99,102,241,.10);
-
-font-size:.75rem;
-
-font-weight:700;
-
-margin-bottom:16px;
-
+    display:flex;
+    flex-direction:column;
+    gap:.45rem;
+    line-height:1.3;
 }
 
 .tg-coach-title{
-margin-bottom:4px;
-margin:0 0 12px;
-
-font-size:1.1rem;
-
+    margin:0;
+    font-size:1rem;
+    font-weight:700;
 }
 
-.tg-coach-message{
-
-line-height:1.45;
-
+.tg-coach-heading{
+    margin:0;
+    font-size:1.05rem;
+    font-weight:600;
+    color:var(--color-text);
 }
 
-.tg-coach-signature{
+.tg-coach-summary{
+    margin:0;
+    line-height:1.45;
+    color:var(--color-text-secondary);
+}
 
-margin-top:10px;
+.tg-coach-reasons{
+    margin:0;
+    padding-left:1.1rem;
+    display:flex;
+    flex-direction:column;
+    gap:.25rem;
+}
 
-padding-top:16px;
-
-border-top:1px solid var(--color-border);
-
-font-size:.85rem;
-
-font-style:italic;
-
-color:var(--color-text-secondary);
-
+.tg-coach-reasons li{
+    line-height:1.2;
+    color:var(--color-text);
 }

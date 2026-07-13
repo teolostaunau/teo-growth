@@ -10,27 +10,31 @@ export function renderPerspectiveSwitcher(): HTMLElement {
 
   section.className = "tg-perspective-switcher";
 
-  section.innerHTML = `
-    <span class="tg-perspective-label">
-      Ver experiencia como:
-    </span>
+section.innerHTML = `
+  <span class="tg-perspective-label">
+    Ver como
+  </span>
 
-    <div class="tg-perspective-options">
+  <nav class="tg-perspective-options">
 
-      <button class="tg-role active" data-role="owner">
-        👔 Dueño
-      </button>
+    <button class="tg-role active" data-role="owner">
+      Dueño
+    </button>
 
-      <button class="tg-role" data-role="executive">
-        💼 Ejecutivo
-      </button>
+    <span class="tg-separator">·</span>
 
-      <button class="tg-role" data-role="viewer">
-        📊 Supervisor
-      </button>
+    <button class="tg-role" data-role="executive">
+      Ejecutivo
+    </button>
 
-    </div>
-  `;
+    <span class="tg-separator">·</span>
+
+    <button class="tg-role" data-role="viewer">
+      Supervisor
+    </button>
+
+  </nav>
+`;
 
   const buttons = section.querySelectorAll<HTMLButtonElement>(".tg-role");
 

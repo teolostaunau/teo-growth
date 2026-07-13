@@ -29,7 +29,7 @@ export function OpportunityExperience(): string {
   </p>
 
   <button class="tg-opportunity-button">
-    ${scenario.opportunity.action}
+    ${scenario.opportunity.action} →
   </button>
 
 </div>

@@ -6,20 +6,24 @@ export function BusinessSnapshot(): string {
 
   const scenario = DemoEngine.current();
 
-  const metrics = scenario.snapshot
+  const snapshot = scenario.snapshot;
+
+const metrics = snapshot.metrics
     .map(
       (metric) => `
         <div class="tg-metric">
 
-          <strong>${metric.value}</strong>
+    <div class="tg-metric-value">
+        ${metric.value}
+    </div>
 
-          <span class="tg-metric-label">
-            ${metric.label}
-          </span>
+    <div class="tg-metric-label">
+        ${metric.label}
+    </div>
 
-          <p class="tg-metric-insight">
-            ${metric.insight}
-          </p>
+    <div class="tg-metric-insight">
+        ${metric.insight}
+    </div>
 
         </div>
       `
@@ -28,15 +32,13 @@ export function BusinessSnapshot(): string {
 
   return `
     <section class="tg-business-card">
-
-      <h3>📊 ¿Por qué esta decisión es importante?</h3>
+      <h3 class="tg-business-title">
+        ${snapshot.title}
+      </h3>
 
       <div class="tg-metrics">
-
         ${metrics}
-
       </div>
-
     </section>
   `;
 }

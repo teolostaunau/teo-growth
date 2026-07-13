@@ -117,69 +117,60 @@ font-weight:700;
 }
 
 .tg-header {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
-  padding:24px 32px;
-
+  padding: 16px 24px;
   background: white;
-
   border-bottom:1px solid var(--color-border);      
-
 }
 
 .tg-header-title{
-
-margin:0;
-
-font-size:1.45rem;
-
-font-weight:700;
-
-color:var(--color-text);
-
+  margin:0;
+  font-size:1.45rem;
+  font-weight:700;
+  color:var(--color-text);
 }
 
 .tg-header-subtitle{
-
-margin-top:4px;
-
-font-size:.9rem;
-
-color:var(--color-text-secondary);
-
+  margin-top:4px;
+  font-size:.9rem;
+  color:var(--color-text-secondary);
 }
 
 .tg-header-left{
-
 display:flex;
-
 align-items:center;
-
 gap:18px;
-
 }
 
 .tg-header-right{
-
 display:flex;
-
 align-items:center;
-
 gap:20px;
-
 }
 
 .tg-header-copy{
-
 display:flex;
-
 flex-direction:column;
+}
 
+.tg-perspective-link{
+    background:none;
+    border:none;
+    padding:0;
+    color:var(--color-text-secondary);
+    font-weight:500;
+    cursor:pointer;
+    transition:.18s;
+    text-decoration:none;
+}
+
+.tg-perspective-link.active{
+    color:var(--color-primary);
+    font-weight:700;
+    text-decoration:underline;
+    text-underline-offset:4px;
 }
 
 .tg-overline {
@@ -249,43 +240,31 @@ padding:16px 20px;
 .tg-coach-card {
 
   background: white;
-
   border-radius: var(--radius-lg);
-
-  padding: var(--space-6);
-
+  padding:1rem;
   box-shadow: var(--shadow-sm);
-
   border: 1px solid var(--color-border);
+  margin:0;
 
 }
 
-.tg-hero-card {
+.tg-hero-card{
 
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 1rem;
+    display:flex;
+    flex-direction:column;
+    gap:.75rem;
 
 }
 
 .tg-badge {
 
   display: inline-flex;
-
   align-self: flex-start;
-
   background: rgba(37,99,235,.08);
-
   color: var(--color-primary);
-
   padding: .45rem .9rem;
-
   border-radius: 999px;
-
   font-size: .85rem;
-
   font-weight: 600;
 
 }
