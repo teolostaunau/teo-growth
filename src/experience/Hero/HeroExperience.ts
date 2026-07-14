@@ -54,7 +54,7 @@ export function HeroExperience(): string {
           </div>
           <div class="hero-heading">
             <h1 class="growth-title">
-              ${greeting.text}, ${scenario.hero.greeting} (${scenario.id})
+              ${greeting.text}, ${scenario.hero.greeting}
             </h1>
 
             <p class="growth-date">

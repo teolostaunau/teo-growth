@@ -48,12 +48,35 @@ export interface CoachContent {
 export interface DemoScenario {
   id: Perspective;
   label: string;
-
   hero: HeroContent;
-
   opportunity: OpportunityContent;
-
   snapshot: SnapshotContent;
-
   coach: CoachContent;
+}
+
+export interface InboxScenario {
+
+  title: string;
+  summary: string;
+
+  priority: {
+    company: string;
+    description: string;
+    probability: number;
+    action: string;
+  };
+
+  coach: {
+    title: string;
+    reasons: string[];
+
+  };
+
+  conversations: {
+    name: string;
+    preview: string;
+    active?: boolean;
+
+  }[];
+
 }

@@ -1,4 +1,5 @@
 import { renderCurrentWorkspace } from "./WorkspaceRenderer";
+import { renderHeader } from "./Header";
 
 export function refreshWorkspace() {
 
@@ -8,6 +9,16 @@ export function refreshWorkspace() {
 
   if (!container) return;
 
+  const header = document.querySelector<HTMLElement>(
+    ".tg-header"
+  );
+
+  if (header) {
+    header.replaceWith(
+      renderHeader()
+    );
+  }
+    
   container.replaceChildren(
     renderCurrentWorkspace()
   );
