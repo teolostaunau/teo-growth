@@ -1,0 +1,327 @@
+.tg-flow-page{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.tg-flow-header h1{
+    margin:0;
+}
+
+.tg-flow-header p{
+    margin-top:8px;
+    color:#64748b;
+}
+
+.tg-flow-main-row{
+    display:grid;
+    grid-template-columns:320px minmax(520px,1fr) 360px;
+    gap:24px;
+    align-items:start;
+}
+
+.tg-placeholder-card{
+
+    background:#fff;
+
+    border:1px solid #dbe3f0;
+
+    border-radius:18px;
+
+    padding:24px;
+
+}
+
+/* ==========================================
+   Flows Metrics™
+========================================== */
+
+.tg-flow-metrics{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:16px;
+
+    margin-bottom:22px;
+
+}
+
+/* ==========================================
+   Active Flow™
+========================================== */
+
+.tg-active-flow{
+
+    background:var(--tg-surface);
+
+    border:1px solid var(--tg-border);
+
+    border-radius:18px;
+
+    padding:24px;
+
+}
+
+.tg-flow-diagram{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.tg-flow-node{
+
+    width:320px;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    border:1px solid var(--tg-border);
+
+    background:#fbfcfe;
+
+    text-align:center;
+
+}
+
+.tg-flow-node strong{
+
+    display:block;
+
+    margin-bottom:8px;
+
+}
+
+.tg-flow-node span{
+
+    color:var(--tg-text-secondary);
+
+    font-size:.92rem;
+
+}
+
+.tg-flow-arrow{
+
+    font-size:24px;
+
+    color:var(--tg-primary);
+
+    font-weight:bold;
+
+}
+
+.tg-flow-options{
+
+    margin-top:14px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.tg-flow-options div{
+
+    padding:10px;
+
+    border-radius:10px;
+
+    background:white;
+
+    border:1px solid var(--tg-border);
+
+    text-align:left;
+
+}
+
+/* ==========================================
+   Flow Library™
+========================================== */
+
+.tg-flow-library{
+
+    background:var(--tg-surface);
+
+    border:1px solid var(--tg-border);
+
+    border-radius:18px;
+
+    padding:24px;
+
+}
+
+.tg-flow-library-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    margin-top:20px;
+
+}
+
+.tg-flow-card{
+
+    display:flex;
+
+    gap:14px;
+
+    align-items:flex-start;
+
+    padding:14px;
+
+    border:1px solid var(--tg-border);
+
+    border-radius:14px;
+
+    background:#fbfcfe;
+
+    transition:.2s;
+
+    cursor:pointer;
+
+}
+
+.tg-flow-card:hover{
+
+    transform:translateY(-2px);
+
+    border-color:var(--tg-primary);
+
+}
+
+.tg-flow-card-icon{
+
+    font-size:1.7rem;
+
+}
+
+.tg-flow-card-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.tg-flow-card-content strong{
+
+    font-size:.98rem;
+
+}
+
+.tg-flow-card-content span{
+
+    color:var(--tg-text-secondary);
+
+    line-height:1.45;
+
+}
+
+.tg-flow-card-content small{
+
+    color:var(--tg-primary);
+
+    font-weight:600;
+
+}
+
+/*==========================================
+Flow Coach™
+==========================================*/
+
+.tg-flow-coach{
+
+    background:white;
+
+    border:1px solid var(--tg-border);
+
+    border-radius:18px;
+
+    padding:22px;
+
+}
+
+.tg-flow-coach-score{
+
+    text-align:center;
+
+    margin:18px 0 24px;
+
+}
+
+.tg-flow-coach-score .score{
+
+    display:block;
+
+    font-size:2.6rem;
+
+    font-weight:700;
+
+    color:var(--tg-primary);
+
+}
+
+.tg-flow-coach-score small{
+
+    color:var(--tg-text-secondary);
+
+}
+
+.tg-flow-insights{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.tg-flow-insight{
+
+    padding-bottom:16px;
+
+    border-bottom:1px solid var(--tg-border);
+
+}
+
+.tg-flow-insight:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+.tg-flow-insight strong{
+
+    display:block;
+
+    margin-bottom:6px;
+
+}
+
+.tg-flow-insight span{
+
+    color:var(--tg-text-secondary);
+
+    line-height:1.55;
+
+}
