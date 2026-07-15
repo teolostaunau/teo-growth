@@ -1,0 +1,107 @@
+/* ===========================
+   Broadcast Metrics™
+=========================== */
+
+.tg-broadcast-metrics {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+  .tg-broadcast-metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===========================
+   Broadcast Coach™
+=========================== */
+
+.tg-broadcast-coach{
+
+    margin-top:20px;
+
+}
+
+.tg-coach-card{
+
+    background:#fff;
+
+    border:1px solid #dbe5f3;
+
+    border-radius:16px;
+
+    padding:18px 20px;
+
+    box-shadow:0 4px 12px rgba(15,23,42,.05);
+
+}
+
+.tg-coach-card h3{
+
+    margin:0 0 12px;
+
+    font-size:20px;
+
+}
+
+.tg-coach-card p{
+
+    margin:0;
+
+    color:#4f6683;
+
+    line-height:1.7;
+
+}
+
+/* =======================================================
+   Broadcast History™
+======================================================= */
+
+.tg-broadcast-history{
+    margin-top:24px;
+}
+
+.tg-broadcast-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:18px;
+    font-size:.92rem;
+}
+
+.tg-broadcast-table th{
+    text-align:left;
+    padding:12px 10px;
+    color:#64748b;
+    font-weight:600;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.tg-broadcast-table td{
+    padding:16px 10px;
+    border-bottom:1px solid #edf2f7;
+}
+
+.tg-broadcast-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.tg-status{
+    padding:5px 12px;
+    border-radius:999px;
+    font-size:.75rem;
+    font-weight:600;
+}
+
+.tg-status.success{
+    color:#166534;
+    background:#dcfce7;
+}
+
+.tg-status.scheduled{
+    color:#92400e;
+    background:#fef3c7;
+}
