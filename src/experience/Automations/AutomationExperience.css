@@ -1,0 +1,313 @@
+.tg-automation{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.tg-page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+/* ==========================================
+   Automation Metrics™
+========================================== */
+
+.tg-automation-metrics{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:16px;
+
+    margin-bottom:22px;
+
+}
+
+/* ==========================================
+   Automation Queue™
+========================================== */
+
+.tg-automation-queue{
+
+    background:#fff;
+
+    border:1px solid var(--tg-border);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:22px;
+
+}
+
+.tg-section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.tg-section-header h3{
+
+    margin:0;
+
+    font-size:1.15rem;
+
+}
+
+.tg-section-header a{
+
+    color:var(--tg-primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.tg-automation-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.tg-automation-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:14px 0;
+
+    border-top:1px solid var(--tg-border);
+
+}
+
+.tg-automation-item:first-child{
+
+    border-top:none;
+
+}
+
+.tg-automation-icon{
+
+    font-size:1.5rem;
+
+    width:40px;
+
+}
+
+.tg-automation-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.tg-automation-content strong{
+
+    font-size:.98rem;
+
+}
+
+.tg-automation-content span{
+
+    color:var(--tg-text-secondary);
+
+    font-size:.9rem;
+
+}
+
+.tg-automation-status{
+
+    text-align:right;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.tg-automation-status strong{
+
+    color:#22c55e;
+
+    font-size:.9rem;
+
+}
+
+.tg-automation-status span{
+
+    color:var(--tg-text-secondary);
+
+    font-size:.85rem;
+
+}
+
+.tg-automation-overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 24px 0;
+  align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .tg-automation-overview {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
+   Automation Coach™
+========================================== */
+.tg-automation-coach {
+
+  background: var(--tg-surface);
+  border: 1px solid var(--tg-border);
+  border-radius: 18px;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  height: 100%;
+}
+
+.tg-automation-coach h3{
+  margin:0;
+  font-size:1.15rem;
+}
+
+.tg-automation-coach p{
+  margin:0;
+  line-height:1.65;
+  color:var(--tg-text-secondary);
+}
+
+.tg-automation-coach strong{
+  color:var(--tg-primary);
+}
+
+/* ==========================================
+   Automation Coach™
+========================================== */
+.tg-automation-library{
+
+    margin-top:24px;
+
+    background:var(--tg-surface);
+
+    border:1px solid var(--tg-border);
+
+    border-radius:18px;
+
+    padding:24px;
+
+}
+
+.tg-library-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    margin:20px 0 28px;
+
+}
+
+.tg-library-card{
+
+    border:1px solid var(--tg-border);
+
+    border-radius:14px;
+
+    padding:18px;
+
+}
+
+.tg-library-card h4{
+
+    margin:0 0 10px;
+
+}
+
+.tg-library-card p{
+
+    margin:0;
+
+    color:var(--tg-text-secondary);
+
+    line-height:1.6;
+
+}
+
+.tg-library-active{
+
+    border-top:1px solid var(--tg-border);
+
+    padding-top:20px;
+
+}
+
+.tg-library-active ul{
+
+    list-style:none;
+
+    margin:16px 0 0;
+
+    padding:0;
+
+}
+
+.tg-library-active li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid var(--tg-border);
+
+}
+
+.tg-library-active strong{
+
+    color:#16a34a;
+
+}

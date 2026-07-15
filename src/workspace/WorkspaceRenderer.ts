@@ -6,6 +6,7 @@ import { renderContactsExperience } from "../experience/Contacts";
 import { renderSmartPipeline } from "../experience/Pipeline";
 import { renderSmartCalendar } from "../experience/Calendar/SmartCalendar";
 import { renderBroadcastExperience } from "../experience/Broadcast/BroadcastExperience";
+import { renderAutomationExperience } from "../experience/Automations/AutomationExperience";
 
 export function renderCurrentWorkspace(): HTMLElement {
 
@@ -28,6 +29,9 @@ export function renderCurrentWorkspace(): HTMLElement {
     
     case "broadcasts":
         return renderBroadcastExperience();
+
+    case "automations":
+        return renderAutomationExperience();
 
     default:
         return renderGrowthCenter();
