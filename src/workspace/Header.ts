@@ -1,5 +1,4 @@
 import { renderPerspectiveSwitcher } from "./PerspectiveSwitcher";
-import growthCenterLogo from "../assets/logos/growth-center.png";
 import { getWorkspace } from "../engine/WorkspaceEngine";
 
 export function renderHeader(): HTMLElement {
@@ -12,47 +11,47 @@ export function renderHeader(): HTMLElement {
 > = {
 
     growth:{
-    title:"Growth Center™",
+    title:"📈 Growth Center™",
     subtitle:"Centro de crecimiento de tu empresa."
     },
 
     inbox:{
-    title:"Smart Inbox™",
+    title:"💬 Smart Inbox™",
     subtitle:"Las conversaciones más importantes primero."
     },
 
     contacts:{
-    title:"Smart Contacts™",
+    title:"👥 Smart Contacts™",
     subtitle:"Las relaciones que impulsan tu crecimiento."
     },
 
     pipelines:{
-    title:"Smart Pipeline™",
+    title:"🎯 Smart Pipeline™",
     subtitle:"Las oportunidades que generan ingresos."
     },
 
     calendar:{
-    title:"Smart Calendar™",
+    title:"📅 Smart Calendar™",
     subtitle:"Organiza el tiempo que genera resultados."
     },
 
     broadcasts:{
-    title:"Broadcast Center™",
+    title:"📣 Broadcast Center™",
     subtitle:"Comunícate con todos tus clientes."
     },
 
     automations:{
-    title:"Automation Center™",
+    title:"⚙️ Automation Center™",
     subtitle:"Automatiza el crecimiento de tu empresa."
     },
 
     flows:{
-    title:"Flow Studio™",
+    title:"🌊 Flow Studio™",
     subtitle:"Diseña procesos inteligentes."
     },
 
     settings:{
-    title:"Configuración",
+    title:"🛠 Configuración",
     subtitle:"Personaliza tu espacio de trabajo."
     }
 
@@ -64,12 +63,6 @@ export function renderHeader(): HTMLElement {
 
   header.innerHTML = `
   <div class="tg-header-left">
-
-    <img
-      src="${growthCenterLogo}"
-      alt="Growth Center"
-      class="tg-growth-logo"
-    />
 
     <div class="tg-header-copy">
 
@@ -87,18 +80,22 @@ export function renderHeader(): HTMLElement {
 
   <div class="tg-header-right">
 
-    <div id="tg-perspective-container"></div>
+      ${
+        workspace === "growth"
+          ? '<div id="tg-perspective-container"></div>'
+          : ""
+      }
 
   </div>
 `;
 
-    const container = header.querySelector<HTMLElement>(
+  const container = header.querySelector<HTMLElement>(
     "#tg-perspective-container"
-    );
+  );
 
-    if (container) {
+  if (workspace === "growth" && container) {
     container.append(renderPerspectiveSwitcher());
-    }
+  }
 
   return header;
 }

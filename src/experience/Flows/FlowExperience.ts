@@ -11,8 +11,7 @@ export function renderFlowExperience(): HTMLElement {
 
     page.innerHTML = `
         <header class="tg-flow-header">
-            <h1>🌊 Flows™</h1>
-            <p>Diseña experiencias inteligentes que acompañan a tus clientes.</p>
+
         </header>
     `;
 

@@ -1,10 +1,8 @@
 .tg-automation{
 
     display:flex;
-
     flex-direction:column;
-
-    gap:20px;
+    gap:8px;
 
 }
 
@@ -25,12 +23,9 @@
 .tg-automation-metrics{
 
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:16px;
-
-    margin-bottom:22px;
+    margin-bottom:10px;
 
 }
 
@@ -45,10 +40,8 @@
     border:1px solid var(--tg-border);
 
     border-radius:18px;
-
-    padding:20px;
-
-    margin-bottom:22px;
+    padding:14px;
+    margin-bottom:0;
 
 }
 
@@ -88,7 +81,7 @@
 
     flex-direction:column;
 
-    gap:14px;
+    gap:8px;
 
 }
 
@@ -100,7 +93,7 @@
 
     justify-content:space-between;
 
-    padding:14px 0;
+    padding:10px 0;
 
     border-top:1px solid var(--tg-border);
 
@@ -174,12 +167,16 @@
 
 }
 
-.tg-automation-overview {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin: 24px 0;
-  align-items: start;
+.tg-automation-overview{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+    margin:0;
+
+    align-items:start;
+
 }
 
 @media (max-width: 1100px) {
@@ -197,11 +194,10 @@
   border: 1px solid var(--tg-border);
   border-radius: 18px;
 
-  padding: 24px;
-
+  padding:14px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap:14px;
 
   height: 100%;
 }
@@ -222,31 +218,24 @@
 }
 
 /* ==========================================
-   Automation Coach™
+   Automation Library™
 ========================================== */
 .tg-automation-library{
 
-    margin-top:24px;
-
+    margin-top:0;
     background:var(--tg-surface);
-
     border:1px solid var(--tg-border);
-
     border-radius:18px;
-
-    padding:24px;
+    padding:14px;
 
 }
 
 .tg-library-grid{
 
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
-    gap:18px;
-
-    margin:20px 0 28px;
+    gap:14px;
+    margin:12px 0 14px;
 
 }
 
@@ -256,31 +245,28 @@
 
     border-radius:14px;
 
-    padding:18px;
+    padding:14px;
 
 }
 
-.tg-library-card h4{
-
+.tg-library-active h3{
     margin:0 0 10px;
-
+    font-size:20px;
+    font-weight:700;
+    line-height:1.2;
 }
 
 .tg-library-card p{
 
     margin:0;
-
     color:var(--tg-text-secondary);
-
     line-height:1.6;
 
 }
 
 .tg-library-active{
 
-    border-top:1px solid var(--tg-border);
-
-    padding-top:20px;
+    padding-top:10px;
 
 }
 
@@ -288,7 +274,7 @@
 
     list-style:none;
 
-    margin:16px 0 0;
+    margin:8px 0 0;
 
     padding:0;
 
@@ -300,7 +286,7 @@
 
     justify-content:space-between;
 
-    padding:12px 0;
+    padding:8px 0;
 
     border-bottom:1px solid var(--tg-border);
 
@@ -309,5 +295,11 @@
 .tg-library-active strong{
 
     color:#16a34a;
+
+}
+
+.tg-library-active h4{
+
+    margin:0 0 10px;
 
 }

@@ -1,9 +1,8 @@
 .tg-smart-contacts{
-
-display:grid;
-grid-template-columns:320px 1fr;
-gap:1rem;
-
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:1rem;
+  align-items:start;
 }
 
 .tg-inbox-list{
@@ -73,15 +72,12 @@ gap:1rem;
 
 .tg-smart-card,
 .tg-priority-card{
+  padding: .9rem 1rem;
+}
 
-background:white;
-
-padding:1rem;
-
-border-radius:var(--radius-lg);
-
-border:1px solid var(--color-border);
-
+.tg-smart-card p{
+  margin:0;
+  line-height:1.45;
 }
 
 .tg-probability{
@@ -176,19 +172,55 @@ color:#64748b;
 
 }
 
-.tg-priority-footer{
-
-display:flex;
-align-items:center;
-justify-content:space-between;
-margin-top:1rem;
-
+.tg-probability{
+  margin:0;
+  font-weight:700;
+  color:var(--color-primary);
 }
 
-.tg-probability{
+.tg-priority-card h3{
+  margin:0;
+  font-size:1.15rem;
+  line-height:1.2;
+}
 
-margin:0;
-font-weight:700;
-color:var(--color-primary);
+.tg-priority-card p{
+  margin:.25rem 0;
+  line-height:1.35;
+}
 
+.tg-priority-card .tg-label{
+  display:block;
+  margin:0 0 .35rem;
+}
+
+.tg-priority-card .tg-amount{
+  margin:.2rem 0;
+  font-size:1rem;
+  font-weight:700;
+  color:var(--color-primary);
+  line-height:1.25;
+}
+
+.tg-priority-card p{
+  margin:0;
+  line-height:1.35;
+}
+
+.tg-priority-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:.75rem;
+}
+
+.tg-priority-content{
+  display:flex;
+  flex-direction:column;
+  gap:.18rem;
+}
+
+.tg-last-contact{
+  color:#475569;
+  font-size:.95rem;
 }

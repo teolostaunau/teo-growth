@@ -15,7 +15,6 @@ export function CoachConversation(): string {
       <h3 class="tg-coach-title">
         🧠 Mi recomendación para hoy
       </h3>
-
       
       <h4 class="tg-coach-heading">
         ${scenario.coach.title}

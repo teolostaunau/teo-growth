@@ -1,7 +1,7 @@
 .tg-flow-page{
     display:flex;
     flex-direction:column;
-    gap:24px;
+    gap:18px;
 }
 
 .tg-flow-header h1{
@@ -16,7 +16,7 @@
 .tg-flow-main-row{
     display:grid;
     grid-template-columns:320px minmax(520px,1fr) 360px;
-    gap:24px;
+    gap:18px;
     align-items:start;
 }
 
@@ -44,7 +44,7 @@
 
     gap:16px;
 
-    margin-bottom:22px;
+    margin-bottom:14px;
 
 }
 
@@ -60,37 +60,45 @@
 
     border-radius:18px;
 
-    padding:24px;
+    padding:18px;
 
 }
 
 .tg-flow-diagram{
 
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
-    gap:14px;
-
-    margin-top:20px;
+    gap:10px;
+    margin-top:14px;
 
 }
 
 .tg-flow-node{
 
-    width:320px;
-
-    padding:18px;
-
-    border-radius:14px;
-
+    width:300px;
+    padding:12px;
+    border-radius:12px;
     border:1px solid var(--tg-border);
-
     background:#fbfcfe;
 
     text-align:center;
+
+}
+
+.tg-flow-node-active{
+
+    background:#EEF4FF;
+
+    border:1px solid #3B82F6;
+
+    box-shadow:0 6px 16px rgba(59,130,246,.12);
+
+}
+
+.tg-flow-node-active strong{
+
+    color:#2563EB;
 
 }
 
@@ -112,7 +120,7 @@
 
 .tg-flow-arrow{
 
-    font-size:24px;
+    font-size:20px;
 
     color:var(--tg-primary);
 
@@ -122,13 +130,13 @@
 
 .tg-flow-options{
 
-    margin-top:14px;
+    margin-top:10px;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:10px;
+    gap:8px;
 
 }
 
@@ -158,19 +166,16 @@
 
     border-radius:18px;
 
-    padding:24px;
+    padding:18px;
 
 }
 
 .tg-flow-library-list{
 
     display:flex;
-
     flex-direction:column;
-
-    gap:16px;
-
-    margin-top:20px;
+    gap:12px;
+    margin-top:14px;
 
 }
 
@@ -182,7 +187,7 @@
 
     align-items:flex-start;
 
-    padding:14px;
+    padding:12px;
 
     border:1px solid var(--tg-border);
 
@@ -216,7 +221,7 @@
 
     flex-direction:column;
 
-    gap:6px;
+    gap:4px;
 
 }
 
@@ -254,7 +259,7 @@ Flow Coach™
 
     border-radius:18px;
 
-    padding:22px;
+    padding:18px;
 
 }
 
@@ -262,7 +267,7 @@ Flow Coach™
 
     text-align:center;
 
-    margin:18px 0 24px;
+    margin:10px 0 18px;
 
 }
 
@@ -290,13 +295,13 @@ Flow Coach™
 
     flex-direction:column;
 
-    gap:18px;
+    gap:14px;
 
 }
 
 .tg-flow-insight{
 
-    padding-bottom:16px;
+    padding-bottom:12px;
 
     border-bottom:1px solid var(--tg-border);
 

@@ -12,9 +12,20 @@ export function renderBroadcastExperience(): HTMLElement {
   section.className = "tg-broadcast";
 
   section.append(
-    renderBroadcastMetrics(),
+    renderBroadcastMetrics()
+  );
+
+  const top = document.createElement("div");
+
+  top.className = "tg-broadcast-top";
+
+  top.append(
     renderBroadcastPriority(),
-    renderBroadcastCoach(),
+    renderBroadcastCoach()
+  );
+
+  section.append(
+    top,
     renderBroadcastHistory()
   );
 

@@ -1,5 +1,6 @@
 import { setWorkspace } from "../engine/WorkspaceEngine";
 import { refreshWorkspace } from "./WorkspaceController";
+import growthCenterLogo from "../assets/logos/growth-center.png";
 
 export function renderSidebar(): HTMLElement {
 
@@ -13,7 +14,11 @@ export function renderSidebar(): HTMLElement {
 
       <div class="tg-logo">
 
-        <span class="tg-logo-mark">T</span>
+        <img
+          src="${growthCenterLogo}"
+          class="tg-logo-image"
+          alt="Teo Growth"
+        />
 
         <div>
 

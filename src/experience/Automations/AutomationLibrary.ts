@@ -36,25 +36,20 @@ export function renderAutomationLibrary(): HTMLElement {
 
     <div class="tg-library-active">
 
-      <h4>⚡ Automatizaciones activas</h4>
-
+      <h3>⚡ Automatizaciones activas</h3>
       <ul>
-
         <li>
           <span>Bienvenida Clientes</span>
           <strong>Activa</strong>
         </li>
-
         <li>
           <span>Lead Premium</span>
           <strong>Activa</strong>
         </li>
-
         <li>
           <span>Renovación</span>
           <strong>Activa</strong>
         </li>
-
       </ul>
 
     </div>

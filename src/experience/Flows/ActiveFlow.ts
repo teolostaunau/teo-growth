@@ -16,32 +16,28 @@ export function renderActiveFlow(): HTMLElement {
 
     <div class="tg-flow-diagram">
 
-      <div class="tg-flow-node">
-        <strong>🚀 Nuevo Lead</strong>
-        <span>Se recibe un nuevo contacto</span>
-      </div>
+        <div class="tg-flow-node tg-flow-node-active">
+            <strong>🚀 Nuevo Lead</strong>
+            <span>Se recibe un nuevo contacto</span>
+        </div>
 
-      <div class="tg-flow-arrow">↓</div>
+        <div class="tg-flow-arrow">↓</div>
 
-      <div class="tg-flow-node">
-        <strong>💬 Mensaje de Bienvenida</strong>
-        <span>WhatsApp automático</span>
-      </div>
+        <div class="tg-flow-node">
+            <strong>💬 Mensaje de Bienvenida</strong>
+            <span>WhatsApp automático</span>
+        </div>
 
-      <div class="tg-flow-arrow">↓</div>
+          <div class="tg-flow-arrow">↓</div>
 
       <div class="tg-flow-node">
 
         <strong>❓ Menú Principal</strong>
 
         <div class="tg-flow-options">
-
           <div>📘 Conocer servicios</div>
-
           <div>📅 Agendar reunión</div>
-
           <div>👤 Hablar con un asesor</div>
-
         </div>
 
       </div>

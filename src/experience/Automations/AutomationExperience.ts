@@ -14,14 +14,6 @@ export function renderAutomationExperience(): HTMLElement {
   page.innerHTML = `
     <header class="tg-page-header">
 
-      <div>
-
-        <h3>
-          Automatiza procesos para que tu negocio crezca incluso cuando no estás conectado.
-        </h3>
-
-      </div>
-
     </header>
   `;
 
