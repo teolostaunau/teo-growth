@@ -17,12 +17,8 @@ export function CoachConversation(): string {
       </h3>
       
       <h4 class="tg-coach-heading">
-        ${scenario.coach.title}
+        ${scenario.coach.title} ${scenario.coach.summary}
       </h4>
-
-      <p class="tg-coach-summary">
-        ${scenario.coach.summary}
-      </p>
 
       <ul class="tg-coach-reasons">
         ${reasons}

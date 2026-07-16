@@ -7,15 +7,18 @@
 
 .tg-coach-title{
     margin:0;
-    font-size:1rem;
+    font-size:.9rem;
     font-weight:700;
+    margin-bottom: 0;
 }
 
 .tg-coach-heading{
     margin:0;
-    font-size:1.05rem;
+    font-size:1rem;
     font-weight:600;
+    line-height:1.2;
     color:var(--color-text);
+    margin-bottom: 0;
 }
 
 .tg-coach-summary{
@@ -26,7 +29,7 @@
 
 .tg-coach-reasons{
     margin:0;
-    padding-left:1.1rem;
+    padding-left:1rem;
     display:flex;
     flex-direction:column;
     gap:.25rem;
