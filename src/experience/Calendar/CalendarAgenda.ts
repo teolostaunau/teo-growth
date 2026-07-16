@@ -9,9 +9,9 @@ export function renderCalendarAgenda(): HTMLElement {
   section.innerHTML = `
 
     <div class="tg-calendar-intro">
-      <h3>
+      <h4>
         Hoy tienes tres actividades que pueden generar el mayor impacto en tus resultados.
-      </h3>
+      </h4>
     </div>
 
     <div class="tg-calendar-priority">

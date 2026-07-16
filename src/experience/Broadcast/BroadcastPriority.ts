@@ -6,7 +6,7 @@ export function renderBroadcastPriority(): HTMLElement {
   section.innerHTML = `
     <div class="tg-priority-card">
 
-      <div class="tg-priority-header">
+      <div class="tg-coach-card">
         <h3>🎯 Campaign Priority™</h3>
         <a href="#">Ver todas</a>
       </div>

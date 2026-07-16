@@ -6,9 +6,7 @@ export function renderBroadcastHistory(): HTMLElement {
   section.innerHTML = `
     <div class="tg-broadcast-card">
 
-      <div class="tg-broadcast-section-title">
-        📋 <strong>Broadcast History™</strong>
-      </div>
+      <h3>📋 Broadcast History™</h3>
 
       <table class="tg-broadcast-table">
 

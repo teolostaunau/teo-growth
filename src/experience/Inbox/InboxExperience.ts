@@ -46,22 +46,8 @@ export function renderInboxExperience(): HTMLElement {
 
       <div class="tg-smart-card">
 
-        <span class="tg-label">
-
-          💬 Smart Inbox™
-
-        </span>
-
-        <h2>
-
-          Buenas noches, Carlos.
-
-        </h2>
-
         <p>
-
           Antes de abrir tus conversaciones encontré la que tiene mayor potencial para generar una venta hoy.
-
         </p>
 
       </div>

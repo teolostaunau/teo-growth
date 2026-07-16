@@ -8,6 +8,7 @@ import { renderSmartCalendar } from "../experience/Calendar/SmartCalendar";
 import { renderBroadcastExperience } from "../experience/Broadcast/BroadcastExperience";
 import { renderAutomationExperience } from "../experience/Automations/AutomationExperience";
 import { renderFlowExperience } from "../experience/Flows/FlowExperience";
+import { renderSettingsExperience } from "../experience/Settings/SettingsExperience";
 
 export function renderCurrentWorkspace(): HTMLElement {
 
@@ -36,6 +37,9 @@ export function renderCurrentWorkspace(): HTMLElement {
 
     case "flows":
         return renderFlowExperience();
+
+    case "settings":
+        return renderSettingsExperience();
 
     default:
         return renderGrowthCenter();
