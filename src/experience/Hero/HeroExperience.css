@@ -1,16 +1,16 @@
 .growth-welcome{
     display:flex;
     flex-direction:column;
-    gap:.35rem;
+    gap:var(--space-1);
     line-height:1.4;
-    margin-bottom:.25rem;
+    margin-bottom:var(--space-1);
 }
 
 .growth-welcome-header{
 
     display:flex;
     align-items:flex-start;
-    gap:16px;
+    gap:var(--space-4);
 
 }
 
@@ -18,7 +18,7 @@
 
     display:flex;
     flex-direction:column;
-    gap:4px;
+    gap:var(--space-1);
 
 }
 
@@ -56,13 +56,13 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:24px;
+    gap:var(--space-5);
 }
 
 .growth-status{
     display:inline-flex;
     align-items:center;
-    padding:8px 14px;
+    padding:var(--space-2) var(--space-3-5);
     border-radius:999px;
     background:#eefaf3;
     color:#15803d;
@@ -74,9 +74,9 @@
 /* Button Welcome */
 .hero-button{
     align-self:flex-start;
-    padding:12px 20px;
+    padding:var(--space-3) var(--space-5-5);
     border:none;
-    border-radius:14px;
+    border-radius:var(--radius-md);
     cursor:pointer;
     background:var(--color-primary);
     color:white;
@@ -89,4 +89,20 @@
 
 .hero-button:hover{
     transform:translateY(-2px);
+}
+
+.tg-growth-center .tg-hero-card {
+    gap: var(--space-2);
+}
+
+.tg-growth-center .hero-icon {
+    font-size: 2rem;
+}
+
+.tg-growth-center .growth-title {
+    font-size: 1.35rem;
+}
+
+.tg-growth-center .hero-button {
+    padding: var(--space-2) var(--space-4);
 }

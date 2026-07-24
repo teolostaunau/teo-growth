@@ -12,9 +12,10 @@ export function renderGrowthCenter(): HTMLElement {
   section.innerHTML = `
     ${HeroExperience()}
 
-    ${OpportunityExperience()}
-
-    ${BusinessSnapshot()}
+    <div class="tg-growth-row">
+      ${OpportunityExperience()}
+      ${BusinessSnapshot()}
+    </div>
 
     ${CoachConversation()}
   `;

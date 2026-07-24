@@ -1,12 +1,12 @@
 /* ===========================
-   Broadcast Metrics™
+   Broadcast Metrics
 =========================== */
 
 .tg-broadcast-metrics {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5-5);
 }
 
 @media (max-width: 1400px) {
@@ -16,15 +16,15 @@
 }
 
 /* ===========================
-   Broadcast Top Row™
+   Broadcast Top Row
 =========================== */
 
 .tg-broadcast-top{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:20px;
+    gap:var(--space-5-5);
     align-items:start;
-    margin-bottom:24px;
+    margin-bottom:var(--space-5);
 }
 
 .tg-broadcast-top > *{
@@ -32,7 +32,7 @@
 }
 
 /* ===========================
-   Broadcast Coach™
+   Broadcast Coach
 =========================== */
 
 .tg-broadcast-coach{
@@ -45,17 +45,17 @@
 
     border:1px solid #dbe5f3;
 
-    border-radius:16px;
+    border-radius:var(--radius-lg);
 
-    padding:18px 20px;
+    padding:var(--space-4-5) var(--space-5-5);
 
-    box-shadow:0 4px 12px rgba(15,23,42,.05);
+    box-shadow:var(--shadow-sm);
 
 }
 
 .tg-coach-card h3{
 
-    margin:0 0 12px;
+    margin:0 0 var(--space-3);
     font-size:18px;
 
 }
@@ -64,14 +64,14 @@
 
     margin:0;
 
-    color:#4f6683;
+    color:var(--color-text-muted);
 
     line-height:1.7;
 
 }
 
 /* =======================================================
-   Broadcast History™
+   Broadcast History
 ======================================================= */
 
 .tg-broadcast-history{
@@ -81,20 +81,20 @@
 .tg-broadcast-table{
     width:100%;
     border-collapse:collapse;
-    margin-top:18px;
+    margin-top:var(--space-4-5);
     font-size:.92rem;
 }
 
 .tg-broadcast-table th{
     text-align:left;
-    padding:12px 10px;
-    color:#64748b;
+    padding:var(--space-3) var(--space-2-5);
+    color:var(--color-text-muted);
     font-weight:600;
     border-bottom:1px solid #e5e7eb;
 }
 
 .tg-broadcast-table td{
-    padding:16px 10px;
+    padding:var(--space-4) var(--space-2-5);
     border-bottom:1px solid #edf2f7;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .tg-status{
-    padding:5px 12px;
+    padding:var(--space-1-5) var(--space-3);
     border-radius:999px;
     font-size:.75rem;
     font-weight:600;

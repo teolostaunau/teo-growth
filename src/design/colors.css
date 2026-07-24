@@ -32,6 +32,7 @@
   --color-surface: var(--neutral-0);
 
   --color-text: var(--neutral-900);
+  --color-text-secondary: var(--neutral-400);
   --color-text-muted: var(--neutral-600);
 
   --color-border: var(--neutral-200);

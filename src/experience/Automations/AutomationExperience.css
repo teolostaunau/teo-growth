@@ -2,7 +2,7 @@
 
     display:flex;
     flex-direction:column;
-    gap:8px;
+    gap:var(--space-2);
 
 }
 
@@ -17,30 +17,30 @@
 }
 
 /* ==========================================
-   Automation Metrics™
+   Automation Metrics
 ========================================== */
 
 .tg-automation-metrics{
 
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:16px;
-    margin-bottom:10px;
+    gap:var(--space-4);
+    margin-bottom:var(--space-2-5);
 
 }
 
 /* ==========================================
-   Automation Queue™
+   Automation Queue
 ========================================== */
 
 .tg-automation-queue{
 
-    background:#fff;
+    background:var(--color-surface);
 
-    border:1px solid var(--tg-border);
+    border:1px solid var(--color-border);
 
-    border-radius:18px;
-    padding:14px;
+    border-radius:var(--radius-lg);
+    padding:var(--space-3-5);
     margin-bottom:0;
 
 }
@@ -53,7 +53,7 @@
 
     align-items:center;
 
-    margin-bottom:18px;
+    margin-bottom:var(--space-4-5);
 
 }
 
@@ -67,7 +67,7 @@
 
 .tg-section-header a{
 
-    color:var(--tg-primary);
+    color:var(--color-primary);
 
     text-decoration:none;
 
@@ -81,7 +81,7 @@
 
     flex-direction:column;
 
-    gap:8px;
+    gap:var(--space-2);
 
 }
 
@@ -93,9 +93,9 @@
 
     justify-content:space-between;
 
-    padding:10px 0;
+    padding:var(--space-2-5) 0;
 
-    border-top:1px solid var(--tg-border);
+    border-top:1px solid var(--color-border);
 
 }
 
@@ -121,7 +121,7 @@
 
     flex-direction:column;
 
-    gap:4px;
+    gap:var(--space-1);
 
 }
 
@@ -133,7 +133,7 @@
 
 .tg-automation-content span{
 
-    color:var(--tg-text-secondary);
+    color:var(--color-text-secondary);
 
     font-size:.9rem;
 
@@ -147,13 +147,13 @@
 
     flex-direction:column;
 
-    gap:4px;
+    gap:var(--space-1);
 
 }
 
 .tg-automation-status strong{
 
-    color:#22c55e;
+    color:var(--color-success);
 
     font-size:.9rem;
 
@@ -161,7 +161,7 @@
 
 .tg-automation-status span{
 
-    color:var(--tg-text-secondary);
+    color:var(--color-text-secondary);
 
     font-size:.85rem;
 
@@ -172,7 +172,7 @@
     display:grid;
     grid-template-columns:repeat(2,1fr);
 
-    gap:16px;
+    gap:var(--space-4);
     margin:0;
 
     align-items:start;
@@ -186,18 +186,18 @@
 }
 
 /* ==========================================
-   Automation Coach™
+   Automation Coach
 ========================================== */
 .tg-automation-coach {
 
-  background: var(--tg-surface);
-  border: 1px solid var(--tg-border);
-  border-radius: 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
 
-  padding:14px;
+  padding:var(--space-3-5);
   display: flex;
   flex-direction: column;
-  gap:14px;
+  gap:var(--space-3-5);
 
   height: 100%;
 }
@@ -210,23 +210,23 @@
 .tg-automation-coach p{
   margin:0;
   line-height:1.65;
-  color:var(--tg-text-secondary);
+  color:var(--color-text-secondary);
 }
 
 .tg-automation-coach strong{
-  color:var(--tg-primary);
+  color:var(--color-primary);
 }
 
 /* ==========================================
-   Automation Library™
+   Automation Library
 ========================================== */
 .tg-automation-library{
 
     margin-top:0;
-    background:var(--tg-surface);
-    border:1px solid var(--tg-border);
-    border-radius:18px;
-    padding:14px;
+    background:var(--color-surface);
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    padding:var(--space-3-5);
 
 }
 
@@ -234,23 +234,23 @@
 
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:14px;
-    margin:12px 0 14px;
+    gap:var(--space-3-5);
+    margin:var(--space-3) 0 var(--space-3-5);
 
 }
 
 .tg-library-card{
 
-    border:1px solid var(--tg-border);
+    border:1px solid var(--color-border);
 
-    border-radius:14px;
+    border-radius:var(--radius-md);
 
-    padding:14px;
+    padding:var(--space-3-5);
 
 }
 
 .tg-library-active h3{
-    margin:0 0 10px;
+    margin:0 0 var(--space-2-5);
     font-size:20px;
     font-weight:700;
     line-height:1.2;
@@ -259,14 +259,14 @@
 .tg-library-card p{
 
     margin:0;
-    color:var(--tg-text-secondary);
+    color:var(--color-text-secondary);
     line-height:1.6;
 
 }
 
 .tg-library-active{
 
-    padding-top:10px;
+    padding-top:var(--space-2-5);
 
 }
 
@@ -274,7 +274,7 @@
 
     list-style:none;
 
-    margin:8px 0 0;
+    margin:var(--space-2) 0 0;
 
     padding:0;
 
@@ -286,20 +286,20 @@
 
     justify-content:space-between;
 
-    padding:8px 0;
+    padding:var(--space-2) 0;
 
-    border-bottom:1px solid var(--tg-border);
+    border-bottom:1px solid var(--color-border);
 
 }
 
 .tg-library-active strong{
 
-    color:#16a34a;
+    color:var(--color-success);
 
 }
 
 .tg-library-active h4{
 
-    margin:0 0 10px;
+    margin:0 0 var(--space-2-5);
 
 }

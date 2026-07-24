@@ -80,7 +80,7 @@ export function renderSidebar(): HTMLElement {
 
       Vision Demo
 
-      <span>v0.6</span>
+      <span>v2.0</span>
 
     </div>
 

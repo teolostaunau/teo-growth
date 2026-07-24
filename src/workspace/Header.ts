@@ -59,7 +59,10 @@ export function renderHeader(): HTMLElement {
 
   const current = headers[workspace];
 
-  header.className = "tg-header";
+  header.className =
+    workspace === "growth"
+      ? "tg-header tg-header--growth"
+      : "tg-header";
 
   header.innerHTML = `
   <div class="tg-header-left">
